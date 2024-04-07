@@ -1,0 +1,132 @@
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  background-color: #edd4c2;
+  color: black;
+}
+#main-doc h2 {
+  font-family: "Oswald";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#navbar ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#navbar h2 {
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 12px;
+  font-family: Oswald;
+}
+#navbar li:hover {
+  font-size: 1.33rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: black;
+}
+#navbar li {
+  padding-right: 8px;
+  padding-left: 8px;
+  text-align: left;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-top: solid black 2px;
+  list-style-type: none;
+}
+#navbar {
+  font-size: 1.3rem;
+  border: solid black 4px;
+  border-radius: 4px;
+  position: fixed;
+  height: 98%;
+  background-color: #8a4c55;
+  margin: 0;
+  max-width: 400px;
+  min-width: 330px;
+  overflow-y: scroll;
+}
+#main-doc {
+  padding: 8px;
+  position: absolute;
+  left: 350px;
+  margin-top: 0;
+  top: 0;
+}
+
+code {
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 800px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  white-space: pre-line;
+  line-height: 2;
+}
+#mdnref {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+  #navbar {
+    font-size: 0.8rem;
+    min-width: 200px;
+    max-width: 720px;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 275px;
+    z-index: 1;
+  }
+
+  #main-doc {
+    min-width: 500px;
+    left: 0;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
